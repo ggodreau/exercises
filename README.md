@@ -38,7 +38,7 @@ We also have some documentation on helpful jupyter notebook shortcuts:
 
 #### DataFrame Commands
 | Command                                                           | Description                                                                                      |
-|--0----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | `df.head()`                                                       | Displays first 5 rows                                                                            |
 | `df.tail()`                                                       | Displays last 5 rows                                                                             |
 | `df.shape`                                                        | Displays the shape of the dataframe ( rows x columns x pages )                                   |
@@ -50,10 +50,10 @@ We also have some documentation on helpful jupyter notebook shortcuts:
 | Command                                                           | Description                                                                                      |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | `df['column']`                                                    | Returns a single column as a `pd.Series` object                                                  |
-| `df[[` 'column' ]]                                                | Returns a single column as a `pd.DataFrame` object                                               |
-| `df[[` 'column1', 'column2' ]]                                    | Returns multiple columns as a `pd.DataFrame` object                                              |
-| `df.rename(columns={'old_name':'new_name'},` inplace=True)        | Overwrites column 'old_name' with column 'new_name'                                              |
-| `df.columns` = ['new_col1', 'new_col2']                           | Overwrites a 2-column-wide DataFrame with names 'new_col1' and 'new_col2'                        |
+| `df[[ 'column' ]]`                                                | Returns a single column as a `pd.DataFrame` object                                               |
+| `df[[ 'column1', 'column2' ]]`                                    | Returns multiple columns as a `pd.DataFrame` object                                              |
+| `df.rename(columns={'old_name':'new_name'}, inplace=True)`        | Overwrites column 'old_name' with column 'new_name'                                              |
+| `df.columns = ['new_col1', 'new_col2']`                           | Overwrites a 2-column-wide DataFrame with names 'new_col1' and 'new_col2'                        |
 | `df.describe()`                                                   | Returns descriptive statistics for numeric values in DataFrame (min, max, etc.)                  |
 | `df['column'].unique()`                                           | Returns distinct values for 'column'                                                             |
 | `df['column'].nunique()`                                          | Returns count of distinct, non-null values in 'column'                                           |
@@ -62,9 +62,9 @@ We also have some documentation on helpful jupyter notebook shortcuts:
 #### Filtering and Sorting
 | Command                                                           | Description                                                                                      |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| `df[` df['column'] < 50 ]                                         | Returns pd.Series object of 'column' where value is less than 50                                 |
-| `df` [ ( df['column1'] < 50 ) &  ( df['column2'] == 'purple' ) ]  | Returns pd.Series object where 'column1' is less than 50 AND 'column2' has string value 'purple' |
-| `df.sort_values(by='column',` ascending = False)                  | Returns pd.Series object, sorted by column 'column', biggest to smallest                         |
+| `df[ df['column'] < 50 ]`                                         | Returns pd.Series object of 'column' where value is less than 50                                 |
+| `df [ ( df['column1'] < 50 ) &  ( df['column2'] == 'purple' ) ]`  | Returns pd.Series object where 'column1' is less than 50 AND 'column2' has string value 'purple' |
+| `df.sort_values(by='column', ascending = False)`                  | Returns pd.Series object, sorted by column 'column', biggest to smallest                         |
 
 ### String Formatting
 
