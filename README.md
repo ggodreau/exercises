@@ -39,7 +39,7 @@ We also have some documentation on helpful jupyter notebook shortcuts:
 #### DataFrame Commands
 | Command                                                         | Description                                                                                      |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| df.head()                                                       | Displays first 5 rows                                                                            |
+| `df.head()`                                                       | Displays first 5 rows                                                                            |
 | df.tail()                                                       | Displays last 5 rows                                                                             |
 | df.shape                                                        | Displays the shape of the dataframe ( rows x columns x pages )                                   |
 | df.columns                                                      | Displays column header labels (can be coerced to list using list())                              |
